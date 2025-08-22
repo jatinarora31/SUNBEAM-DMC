@@ -10,5 +10,30 @@ e) Tolls per day*/
 
 package Assignments.Ass2;
 
+import java.util.Scanner;
+
 public class Ques3 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter total miles travelled:- ");
+        double miles = sc.nextDouble();
+        System.out.print("Enter cost per gallon of gasoline:- ");
+        double cost = sc.nextDouble();
+        System.out.print("Enter parking fees per day:- ");
+        double park = sc.nextDouble();
+        System.out.print("Enter tolls per day:- ");
+        double tolls = sc.nextDouble();
+
+        double totalCost = 0;
+        double avgMiles = 0;
+
+        avgMiles = miles*cost;
+
+        totalCost = avgMiles + park + tolls;
+
+        System.out.print("Your total cost per day is:- "+totalCost);
+
+    }
+
 }
