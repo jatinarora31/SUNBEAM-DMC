@@ -53,7 +53,6 @@ class Point2D {
 
 }
 
-
 public class Ques3 {
 
     public static void main(String[] args) {
@@ -73,7 +72,8 @@ public class Ques3 {
         System.out.println(point.getDetails());
         if(point.isEqual()) System.out.println("Co-ordinates are same");
         else System.out.println("Co-ordinates are different");
-        System.out.println("Distance between both the coordinates are - "+point.calculateDistance());
+        if(!point.isEqual()) System.out.println("Distance between both the coordinates are - "+point.calculateDistance());
+        if(point.isEqual()) System.out.println("No distance! Points are same");
 
 
 
