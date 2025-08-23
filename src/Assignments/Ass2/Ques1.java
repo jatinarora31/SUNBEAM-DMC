@@ -9,6 +9,16 @@ package Assignments.Ass2;
 import java.util.Scanner;
 class Menu {
 
+    int dosa = 50;
+    int idli = 30;
+    int vada = 30;
+    int pizza = 90;
+    int burger = 60;
+    int samosa = 15;
+    int kachori = 15;
+    int pawBhaji = 50;
+    int puriSabzi = 40;
+
     void displayMenu(int totalBill) {
         Scanner sc = new Scanner(System.in);
         System.out.println("---MENU---");
@@ -31,39 +41,39 @@ class Menu {
         switch(choice) {
 
             case 1:
-                totalBill += 50;
+                totalBill += dosa;
                 displayMenu(totalBill);
                 break;
             case 2:
-                totalBill += 30;
+                totalBill += idli;
                 displayMenu(totalBill);
                 break;
             case 3:
-                totalBill += 30;
+                totalBill += vada;
                 displayMenu(totalBill);
                 break;
             case 4:
-                totalBill += 90;
+                totalBill += pizza;
                 displayMenu(totalBill);
                 break;
             case 5:
-                totalBill += 60;
+                totalBill += burger;
                 displayMenu(totalBill);
                 break;
             case 6:
-                totalBill += 15;
+                totalBill += samosa;
                 displayMenu(totalBill);
                 break;
             case 7:
-                totalBill += 15;
+                totalBill += kachori;
                 displayMenu(totalBill);
                 break;
             case 8:
-                totalBill += 50;
+                totalBill += pawBhaji;
                 displayMenu(totalBill);
                 break;
             case 9:
-                totalBill += 40;
+                totalBill += puriSabzi;
                 displayMenu(totalBill);
                 break;
             case 10:
