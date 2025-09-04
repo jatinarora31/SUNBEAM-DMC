@@ -32,7 +32,7 @@ o/p : error message (in case of invalid index) or mark it stale
 8. Mark all sour fruits stale (optional)
 eg : for-each , taste --equals(String)*/
 
-package Assignments.Ass4.com.app;
+package Assignments.corejava.Ass4;
 
 import java.util.Scanner;
 
@@ -44,9 +44,9 @@ class FruitBasket {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of basket: ");
         int n = sc.nextInt();
-        Fruit[] basket = new Fruit[n];
+        Assignments.Ass4.com.app.Fruit[] basket = new Assignments.Ass4.com.app.Fruit[n];
 
-        Fruit f = new Fruit();
+        Assignments.Ass4.com.app.Fruit f = new Assignments.Ass4.com.app.Fruit();
 
         int choice;
         int counter=0;
@@ -59,7 +59,7 @@ class FruitBasket {
                         System.out.println("Enter the details of Mango: ");
                         f.accept(f.name,f.color, f.weight,f.taste,f.isFresh);
                         if(f.isFresh) {
-                            basket[counter++] = new Mango(f.name,f.color, f.weight,f.taste,f.isFresh);
+                            basket[counter++] = new Assignments.Ass4.com.app.Mango(f.name,f.color, f.weight,f.taste,f.isFresh);
                             System.out.println("---[[MANGO ADDED SUCCESSFULLY]]---");
                         }
                     } else System.out.println("---[[BASKET IS FULL]]---");
@@ -70,7 +70,7 @@ class FruitBasket {
                         System.out.println("Enter the details of Orange: ");
                         f.accept(f.name,f.color, f.weight,f.taste,f.isFresh);
                         if(f.isFresh) {
-                            basket[counter++] = new Orange(f.name,f.color, f.weight,f.taste,f.isFresh);
+                            basket[counter++] = new Assignments.Ass4.com.app.Orange(f.name,f.color, f.weight,f.taste,f.isFresh);
                             System.out.println("---[[ORANGE ADDED SUCCESSFULLY]]---");
                         }
                     } else System.out.println("---[[BASKET IS FULL]]---");
@@ -81,7 +81,7 @@ class FruitBasket {
                         System.out.println("Enter the details of Apple: ");
                         f.accept(f.name,f.color, f.weight,f.taste,f.isFresh);
                         if(f.isFresh) {
-                            basket[counter++] = new Apple(f.name,f.color, f.weight,f.taste,f.isFresh);
+                            basket[counter++] = new Assignments.Ass4.com.app.Apple(f.name,f.color, f.weight,f.taste,f.isFresh);
                             System.out.println("---[[APPLE ADDED SUCCESSFULLY]]---");
                         }
                     } else System.out.println("---[[BASKET IS FULL]]---");
@@ -90,7 +90,7 @@ class FruitBasket {
                 case 4:   //Display names of all fruits in the basket
                     if(basket[0] != null) {
                         System.out.println("Displaying name of all fruit: ");
-                        for(Fruit fruit:basket) {
+                        for(Assignments.Ass4.com.app.Fruit fruit:basket) {
                             if(fruit != null) {
                                 System.out.println(fruit.name);
                             }
@@ -104,7 +104,7 @@ class FruitBasket {
                 case 5:   //Display name,color,weight,taste of all fresh fruits in the basket
                     if (basket[0] != null) {
                         System.out.println("Displaying name,color,weight,taste of all fruits present in basket: ");
-                        for(Fruit fruit : basket) {
+                        for(Assignments.Ass4.com.app.Fruit fruit : basket) {
                             if(fruit != null && fruit.isFresh) {
                                 System.out.println(fruit.toString());
                             }
@@ -116,7 +116,7 @@ class FruitBasket {
                     break;
 
                 case 6:   // Display tastes of all stale(not fresh) fruits in the basket.
-                    for(Fruit fruit : basket) {
+                    for(Assignments.Ass4.com.app.Fruit fruit : basket) {
                         if(fruit != null) {
                             if(!fruit.isFresh) {
                                 System.out.println("{Name: "+fruit.name+" --> Taste: "+fruit.taste+"}");
@@ -150,10 +150,10 @@ class FruitBasket {
                     break;
 
                 case 8: // Mark all sour fruits stale
-                    for(Fruit fr: basket) {
+                    for(Assignments.Ass4.com.app.Fruit fr: basket) {
                         if(fr.taste.equals("sour")) {
-                            for(Fruit fruit : basket) {
-                                if(fruit.taste.equals("sour") || fruit.taste.equals("sweet n sour")) {
+                            for(Assignments.Ass4.com.app.Fruit fruit : basket) {
+                                if(fruit.taste.equals("sour")) {
                                     fruit.isFresh = false;
                                 }
                             }

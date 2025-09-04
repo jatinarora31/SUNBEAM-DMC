@@ -1,6 +1,6 @@
-package Assignments.Ass4.com.app;
+package Assignments.corejava.Ass4;
 
-class Mango extends Fruit {
+class Mango extends Assignments.Ass4.com.app.Fruit {
 
     Mango() {
     }

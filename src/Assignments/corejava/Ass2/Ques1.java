@@ -4,7 +4,7 @@ When user enters 'Generate Bill' option , display total bill & exit.
 (No need of any class, and no need to display the food details. Only display the total of orderd
 food)*/
 
-package Assignments.Ass2;
+package Assignments.corejava.Ass2;
 
 import java.util.Scanner;
 class Menu {

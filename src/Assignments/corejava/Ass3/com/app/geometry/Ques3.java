@@ -13,7 +13,7 @@ Use getDetails method to display point details.(p1's details & p2's details)
 Invoke isEqual & display if points are same or different (i.e p1 & p2 are located at the same position)
 If they are not located at the same position , display distance between p1 & p2*/
 
-package Assignments.Ass3.com.app.geometry;
+package Assignments.corejava.Ass3.com.app.geometry;
 
 
 import java.util.Scanner;

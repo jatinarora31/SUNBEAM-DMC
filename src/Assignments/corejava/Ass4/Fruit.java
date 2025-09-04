@@ -1,4 +1,4 @@
-package Assignments.Ass4.com.app;
+package Assignments.corejava.Ass4;
 
 import java.util.Scanner;
 

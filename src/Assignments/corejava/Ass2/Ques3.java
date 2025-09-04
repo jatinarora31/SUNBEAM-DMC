@@ -8,7 +8,7 @@ c) Average miles per gallon.
 d) Parking fees per day.
 e) Tolls per day*/
 
-package Assignments.Ass2;
+package Assignments.corejava.Ass2;
 
 import java.util.Scanner;
 

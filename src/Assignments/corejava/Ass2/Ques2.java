@@ -9,7 +9,7 @@ If the quantity is not positive, it should be set to 0.
 If the price per item is not positive, it should be set to 0.0.
 Write a test application named InvoiceTest that demonstrate class Invoice’s capabilities.*/
 
-package Assignments.Ass2;
+package Assignments.corejava.Ass2;
 
 import java.util.Scanner;
 

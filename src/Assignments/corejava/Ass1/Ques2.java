@@ -1,6 +1,5 @@
-package Assignments.Ass1;
+package Assignments.corejava.Ass1;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Ques2 {
